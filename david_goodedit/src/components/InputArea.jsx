@@ -13,13 +13,6 @@ class InputArea extends React.Component {
     this.setState({
       transformedText: convertToHTML(event.target.value)
     })
-    /*
-		this.setState(
-			(prevState, prevProps) => {
-				return {transformedText: convertToHTML(event.target.value)}
-			}
-		)
-		*/
   }
   render() {
     return (
