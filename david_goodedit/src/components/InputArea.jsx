@@ -1,4 +1,5 @@
 import React from 'react'
+import convertToHTML from 'markdown-to-html-converter'
 
 class InputArea extends React.Component {
   constructor(props) {
