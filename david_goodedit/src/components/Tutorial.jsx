@@ -33,7 +33,24 @@ function Tutorial() {
             <p>1. Avoir une idée<br />2. Trouver des fonds<br />
                 3. ?<br />4. Profit
             </p>
-            <p className='titleH4'>Titre</p>
+            <ol>
+              <li>Avoir une idée</li>
+              <li>Trouver des fonds</li>
+              <li>?</li>
+              <li>Profit</li>
+            </ol>
+          </div>
+          <h3>Les listes non-ordonnées :</h3>
+          <div className="transformation">
+            <p>* Avoir une idée<br />* Trouver des fonds<br />
+                * ?<br />* Profit
+            </p>
+            <ul>
+              <li>Avoir une idée</li>
+              <li>Trouver des fonds</li>
+              <li>?</li>
+              <li>Profit</li>
+            </ul>
           </div>
         </div>
       </div>
