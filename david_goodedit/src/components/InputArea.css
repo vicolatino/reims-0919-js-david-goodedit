@@ -7,39 +7,31 @@
 }
 
 .SecondInputContainer {
-    
-    align-items: center;
-    height: 21em;
-    width: 20em;
-    
+    align-items: stretch;
 }
 .HtmlContainer {
     background: white;
-    height: 450px;
     width: 314px;
-    overflow-wrap: break-word;
-    overflow: scroll;
-    padding: 2%;
-    display: flex;
+    /* overflow-wrap: break-word; */
+    overflow: auto;
+    /* padding: 2%; */
+    flex: 1;
+    font-size: 1rem;
     border: solid 1px black;
-    padding: 0;
 }
 
 .FirstContainerHTML {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
+    align-items: stretch;
 }
 .FirstContainerHTML button {
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 .SecondInputContainer textarea {
     resize: none;
-    height: 450px;
     width: 314px;
     border: solid 1px black;
-    
+    flex: 1;
+    font-size: 1rem;
  }
 
 .CounterAndLogo {
