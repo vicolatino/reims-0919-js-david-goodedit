@@ -9,9 +9,10 @@ class InputArea extends React.Component {
     }
     this.converter = this.converter.bind(this)
   }
+
   converter(event) {
     this.setState({
-      transformedText: convertToHTML(event.target.value)
+      transformedText: convertToHTML(event.target.value + '\n')
     })
   }
   render() {
@@ -23,6 +24,7 @@ class InputArea extends React.Component {
             id='inputMD'
             name='inputMD'
             onChange={this.converter}
+            onClick={this.antibug}
           ></textarea>
         </div>
         <div>
