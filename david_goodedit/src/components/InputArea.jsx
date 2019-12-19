@@ -9,7 +9,7 @@ class InputArea extends React.Component {
     this.state = {
       transformedText: ``,
       words: 0,
-      characters:0,
+      characters: 0
     }
     this.converter = this.converter.bind(this);
     this.downloadFile = this.downloadFile.bind(this);
@@ -17,6 +17,7 @@ class InputArea extends React.Component {
 
   converter(event) {
     this.setState({
+      characters: event.target.value.length,
       transformedText: convertToHTML(event.target.value + '\n')
         .split(`\n`)
         .map(balise => {
@@ -45,11 +46,11 @@ class InputArea extends React.Component {
           <button>Need help ?</button>
         </div>
         <div className='CounterAndLogo'>
-          <img src="https://zupimages.net/up/19/51/oqpj.png" alt=""/>
+          <img src='https://zupimages.net/up/19/51/oqpj.png' alt='' />
           <div>Words : {this.state.words}</div>
           <div>Characters : {this.state.characters}</div>
         </div>
-        <div className = 'FirstContainerHTML inset flex-column'>
+        <div className='FirstContainerHTML inset flex-column'>
           <h2 className='stack'>HTML</h2>
           <div className= 'HtmlContainer stack stretch-inset'>{this.state.transformedText}</div> 
           <button onClick={this.downloadFile}>Download</button>
