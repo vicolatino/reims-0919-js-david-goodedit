@@ -6,7 +6,6 @@ import ImageTuto from './ImageTuto'
 import ParagraphTuto from './ParagraphTuto'
 import UrlTuto from './UrlTuto'
 import QuoteTuto from './QuoteTuto'
-import CodeTuto from './CodeTuto'
 
 function Tutorial() {
   return (
@@ -19,7 +18,6 @@ function Tutorial() {
       <ImageTuto />
       <UrlTuto />
       <QuoteTuto />
-      <CodeTuto />
     </div>
   );
 }
