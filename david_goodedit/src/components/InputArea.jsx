@@ -19,12 +19,11 @@ class InputArea extends React.Component {
     return (
       <div>
         <div>
-          <label htmlFor=''>Markdown</label>
+          <label htmlFor='inputMD'>Markdown</label>
           <textarea
             id='inputMD'
             name='inputMD'
             onChange={this.converter}
-            onClick={this.antibug}
           ></textarea>
         </div>
         <div>
