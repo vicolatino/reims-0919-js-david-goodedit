@@ -1,7 +1,7 @@
 import React from 'react'
 import convertToHTML from 'markdown-to-html-converter'
 import './InputArea.css'
-//const downloadjs = require('downloadjs')
+const downloadjs = require('downloadjs')
 
 class InputArea extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class InputArea extends React.Component {
       characters: 0
     }
     this.converter = this.converter.bind(this)
-    //    this.downloadFile = this.downloadFile.bind(this)
+    this.downloadFile = this.downloadFile.bind(this)
   }
 
   converter(event) {
@@ -26,15 +26,15 @@ class InputArea extends React.Component {
     })
   }
 
-  //  downloadFile() {
-  //    downloadjs(
-  //      this.state.transformedText.reduce((acc, element) => {
-  //        return acc + '\n' + element.props.children
-  //      }, ''),
-  //     'yourHTML.txt',
-  //   'text/plain'
-  // )
-  // }
+  downloadFile() {
+    downloadjs(
+      this.state.transformedText.reduce((acc, element) => {
+        return acc + '\n' + element.props.children
+      }, ''),
+      'yourHTML.txt',
+      'text/plain'
+    )
+  }
 
   render() {
     return (

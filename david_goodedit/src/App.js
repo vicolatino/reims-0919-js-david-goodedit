@@ -3,7 +3,6 @@ import './App.css'
 import InputArea from './components/InputArea'
 import Home from './components/Home'
 import Tutorial from './components/Tutorial'
-import { render } from '@testing-library/react'
 
 class App extends React.Component {
   constructor(props) {
