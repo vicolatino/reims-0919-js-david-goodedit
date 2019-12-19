@@ -25,28 +25,26 @@ class InputArea extends React.Component {
   render() {
     return (
       <div className='InputContainer'>
-        <div className='SecondInputContainer'>
-        <h2>MARKDOWN</h2>
+        <div className='SecondInputContainer inset flex-column'>
+          <h2 className='stack'>MARKDOWN</h2>
           <textarea
             id='inputMD'
             name='inputMD'
+            className='stack stretch-inset'
             onChange={this.converter}
           ></textarea>
-          <div>
-        <button>Need help ?</button></div>
+          <button>Need help ?</button>
         </div>
         <div className='CounterAndLogo'>
           <img src="https://zupimages.net/up/19/51/oqpj.png" alt=""/>
           <div>Words : {this.state.words}</div>
           <div>Characters : {this.state.characters}</div>
         </div>
-        <div className = 'FirstContainerHTML'>
-        <h2>HTML</h2>
-          <div className= 'HtmlContainer'>{this.state.transformedText}</div> 
-          <div>
-        <button>Download</button></div>
+        <div className = 'FirstContainerHTML inset flex-column'>
+          <h2 className='stack'>HTML</h2>
+          <div className= 'HtmlContainer stack stretch-inset'>{this.state.transformedText}</div> 
+          <button>Download</button>
         </div>
-        
       </div>
     )
   }
