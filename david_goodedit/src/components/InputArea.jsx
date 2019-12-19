@@ -9,16 +9,17 @@ class InputArea extends React.Component {
     }
     this.converter = this.converter.bind(this)
   }
+
   converter(event) {
     this.setState({
-      transformedText: convertToHTML(event.target.value)
+      transformedText: convertToHTML(event.target.value + '\n')
     })
   }
   render() {
     return (
       <div>
         <div>
-          <label htmlFor=''>Markdown</label>
+          <label htmlFor='inputMD'>Markdown</label>
           <textarea
             id='inputMD'
             name='inputMD'
