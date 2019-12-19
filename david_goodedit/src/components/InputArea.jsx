@@ -26,13 +26,21 @@ class InputArea extends React.Component {
 
   render() {
     return (
-      <div className='InputContainer'>
+      <div
+        className={
+          this.props.light === true ? 'InputContainer' : 'darkInputContainer'
+        }
+      >
         <div className='SecondInputContainer inset flex-column'>
           <h2 className='stack'>MARKDOWN</h2>
           <textarea
             id='inputMD'
             name='inputMD'
-            className='stack stretch-inset'
+            className={
+              this.props.light === true
+                ? 'stack stretch-inset'
+                : 'darkMDInput stack stretch-inset'
+            }
             onChange={this.converter}
           ></textarea>
           <button>Need help ?</button>
@@ -44,7 +52,13 @@ class InputArea extends React.Component {
         </div>
         <div className='FirstContainerHTML inset flex-column'>
           <h2 className='stack'>HTML</h2>
-          <div className='HtmlContainer stack stretch-inset'>
+          <div
+            className={
+              this.props.light === true
+                ? 'HtmlContainer stack stretch-inset'
+                : 'darkHtmlContainer stack stretch-inset'
+            }
+          >
             {this.state.transformedText}
           </div>
           <button>Download</button>

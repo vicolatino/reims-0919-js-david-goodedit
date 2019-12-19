@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.darkApp {
+  color: #dddddd !important;
+  background-color: #222222 !important;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -31,7 +36,7 @@ p {
 }
 
 .stretch-inset {
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 }
 .App-logo {
   height: 40vmin;

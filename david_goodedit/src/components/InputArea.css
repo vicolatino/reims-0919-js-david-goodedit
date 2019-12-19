@@ -1,50 +1,72 @@
 .InputContainer {
-    background: #f1f1f1;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    
+  background: #f1f1f1;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.darkInputContainer {
+  background: #222222;
+  color: #dddddd;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+.darkMDInput {
+  background: #222222;
+  color: #dddddd;
+  border: solid 1px #dddddd !important;
 }
 
 .SecondInputContainer {
-    align-items: stretch;
+  align-items: stretch;
 }
+
+.darkHtmlContainer {
+  color: #dddddd !important;
+  background-color: #222222 !important;
+  width: 314px;
+  overflow: auto;
+  flex: 1;
+  font-size: 1rem;
+  border: solid 1px #dddddd;
+}
+
 .HtmlContainer {
-    background: white;
-    width: 314px;
-    /* overflow-wrap: break-word; */
-    overflow: auto;
-    /* padding: 2%; */
-    flex: 1;
-    font-size: 1rem;
-    border: solid 1px black;
+  background: white;
+  width: 314px;
+  /* overflow-wrap: break-word; */
+  overflow: auto;
+  /* padding: 2%; */
+  flex: 1;
+  font-size: 1rem;
+  border: solid 1px black;
 }
 
 .FirstContainerHTML {
-    align-items: stretch;
+  align-items: stretch;
 }
 .FirstContainerHTML button {
-    /* margin-top: 1%; */
+  /* margin-top: 1%; */
 }
 .SecondInputContainer textarea {
-    resize: none;
-    width: 314px;
-    border: solid 1px black;
-    flex: 1;
-    font-size: 1rem;
- }
+  resize: none;
+  width: 314px;
+  border: solid 1px black;
+  flex: 1;
+  font-size: 1rem;
+}
 
 .CounterAndLogo {
-     
-     height: 21em;
-     width: 10em;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-evenly;
-     margin-top: 6%;
- }
+  height: 21em;
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6%;
+}
 
- .CounterAndLogo img {
-    width: 100%;
- }
+.CounterAndLogo img {
+  width: 100%;
+}
