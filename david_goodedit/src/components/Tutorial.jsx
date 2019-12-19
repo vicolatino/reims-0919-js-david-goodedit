@@ -3,6 +3,8 @@ import './Tutorial.css'
 import TitleTuto from './TitleTuto'
 import ListsTuto from './ListsTuto'
 import ImageTuto from './ImageTuto'
+import ParagraphTuto from './ParagraphTuto'
+import UrlTuto from './UrlTuto'
 
 function Tutorial() {
   return (
@@ -15,6 +17,8 @@ function Tutorial() {
         <div>
           <ListsTuto />
           <ImageTuto />
+          <ParagraphTuto />
+          <UrlTuto />
         </div>
       </div>
     </div>
