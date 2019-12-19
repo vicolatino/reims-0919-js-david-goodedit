@@ -22,3 +22,9 @@
   font-size: 1.4em;
   margin: 0px 0px 5px 30px;
 }
+
+.transformation2 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
