@@ -13,6 +13,10 @@ class InputArea extends React.Component {
   converter(event) {
     this.setState({
       transformedText: convertToHTML(event.target.value + '\n')
+        .split(`\n`)
+        .map(balise => {
+          return <p>{balise}</p>
+        })
     })
   }
   render() {
