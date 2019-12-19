@@ -12,9 +12,14 @@ class InputArea extends React.Component {
     }
     this.converter = this.converter.bind(this)
   }
+
   converter(event) {
     this.setState({
-      transformedText: convertToHTML(event.target.value)
+      transformedText: convertToHTML(event.target.value + '\n')
+        .split(`\n`)
+        .map(balise => {
+          return <p>{balise}</p>
+        })
     })
   }
   render() {
@@ -22,7 +27,6 @@ class InputArea extends React.Component {
       <div className='InputContainer'>
         <div className='SecondInputContainer'>
         <h2>MARKDOWN</h2>
-
           <textarea
             id='inputMD'
             name='inputMD'
