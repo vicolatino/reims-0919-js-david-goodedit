@@ -5,22 +5,20 @@ import ListsTuto from './ListsTuto'
 import ImageTuto from './ImageTuto'
 import ParagraphTuto from './ParagraphTuto'
 import UrlTuto from './UrlTuto'
+import QuoteTuto from './QuoteTuto'
+import CodeTuto from './CodeTuto'
 
 function Tutorial() {
   return (
     <div>
       <h1>Tutoriel</h1>
-      <div>
-        <div>
-          <TitleTuto />
-        </div>
-        <div>
-          <ListsTuto />
-          <ImageTuto />
-          <ParagraphTuto />
-          <UrlTuto />
-        </div>
-      </div>
+      <TitleTuto />
+      <ListsTuto />
+      <ImageTuto />
+      <ParagraphTuto />
+      <UrlTuto />
+      <QuoteTuto />
+      <CodeTuto />
     </div>
   );
 }
