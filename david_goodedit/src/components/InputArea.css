@@ -1,0 +1,58 @@
+.InputContainer {
+    background: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.SecondInputContainer {
+    
+    align-items: center;
+    height: 21em;
+    width: 20em;
+    
+}
+.HtmlContainer {
+    background: white;
+    height: 450px;
+    width: 314px;
+    overflow-wrap: break-word;
+    overflow: scroll;
+    padding: 2%;
+    display: flex;
+    border: solid 1px black;
+    padding: 0;
+}
+
+.FirstContainerHTML {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.FirstContainerHTML button {
+    margin-top: 1%;
+}
+.SecondInputContainer textarea {
+    resize: none;
+    height: 450px;
+    width: 314px;
+    border: solid 1px black;
+    
+ }
+
+.CounterAndLogo {
+     
+     height: 21em;
+     width: 10em;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     margin-top: 6%;
+ }
+
+ .CounterAndLogo img {
+    width: 100%;
+ }
