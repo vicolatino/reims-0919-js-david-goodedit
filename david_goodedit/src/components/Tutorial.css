@@ -1,6 +1,26 @@
+.titleSection {
+  text-align: center;
+}
+
+.pTitle {
+  text-align: center;
+}
+
+.transformationTitle {
+  display: flex;
+  align-items: baseline;
+}
+
 .transformation {
   display: flex;
   align-items: baseline;
+  margin: auto;
+}
+
+#blockTuto {
+  display: flex;
+  align-items: baseline;
+  margin: 0px 20px 10px 60px;
 }
 
 .titleH1 {

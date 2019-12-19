@@ -11,7 +11,8 @@ import CodeTuto from './CodeTuto'
 function Tutorial() {
   return (
     <div>
-      <h1>Tutoriel</h1>
+      <h1 className="titleSection">Tutoriel</h1>
+      <hr />
       <TitleTuto />
       <ListsTuto />
       <ImageTuto />

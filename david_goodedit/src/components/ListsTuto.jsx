@@ -4,7 +4,7 @@ import './Tutorial.css'
 function ListsTuto() {
   return (
     <div>
-      <h2>Les listes :</h2>
+      <h2 id="titleH2">Les listes :</h2>
       <div className="transformation">
         <div className="transformation2">
           <h3>Les listes ordonnées :</h3>
