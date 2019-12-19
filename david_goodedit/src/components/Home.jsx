@@ -4,7 +4,13 @@ import './Home.css'
 class Home extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      light: true
+    }
+    this.aziz = this.aziz.bind(this)
+  }
+  aziz() {
+    this.setState({ light: !this.state.light })
   }
   render() {
     return (
@@ -15,6 +21,9 @@ class Home extends React.Component {
             <img src='https://zupimages.net/up/19/51/08jy.png' />
           </a>
         </nav>
+        <button onClick={this.aziz}>
+          {this.state.light === true ? 'Eteindre' : 'Allumer'}
+        </button>
         <div className='GoodEnoughContainer flex-column'>
           <img
             src='https://zupimages.net/up/19/51/vn62.png'
