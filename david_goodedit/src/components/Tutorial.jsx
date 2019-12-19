@@ -14,9 +14,9 @@ function Tutorial() {
       <h1 className="titleSection">Tutoriel</h1>
       <hr />
       <TitleTuto />
+      <ParagraphTuto />
       <ListsTuto />
       <ImageTuto />
-      <ParagraphTuto />
       <UrlTuto />
       <QuoteTuto />
       <CodeTuto />

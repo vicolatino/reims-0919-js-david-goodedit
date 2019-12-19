@@ -4,8 +4,7 @@ import './Tutorial.css'
 function ParagraphTuto() {
   return (
     <div>
-      <h2>Les paragraphes :</h2>
-        <p>
+        <p id="paragraphTuto">
           Les paragraphes sont écrits sans ajout de caractères particuliers. 
           Ils peuvent être séparés par un simple saut de ligne.
           La mise en forme de base de l'italique et du gras est prise en charge.
