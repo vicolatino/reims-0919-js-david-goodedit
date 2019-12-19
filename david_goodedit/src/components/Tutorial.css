@@ -57,3 +57,21 @@
   align-items: baseline;
   margin: auto;
 }
+
+.boxImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.exampleImage {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.boxUrl {
+  text-align: center;
+  margin-top: 5%;
+}
