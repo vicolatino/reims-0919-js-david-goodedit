@@ -1,6 +1,7 @@
 import React from 'react'
 import convertToHTML from 'markdown-to-html-converter'
 import './InputArea.css'
+const downloadjs = require("downloadjs")
 
 class InputArea extends React.Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class InputArea extends React.Component {
       words: 0,
       characters: 0
     }
-    this.converter = this.converter.bind(this)
+    this.converter = this.converter.bind(this);
+    this.downloadFile = this.downloadFile.bind(this);
   }
 
   converter(event) {
@@ -22,6 +24,12 @@ class InputArea extends React.Component {
           return <p>{balise}</p>
         })
     })
+  }
+
+  downloadFile() {
+    downloadjs(this.state.transformedText.reduce((acc, element) => {
+      return acc + '\n' + element.props.children  ;
+    }, ''), "yourHTML.txt", "text/plain");
   }
 
   render() {
@@ -52,6 +60,7 @@ class InputArea extends React.Component {
         </div>
         <div className='FirstContainerHTML inset flex-column'>
           <h2 className='stack'>HTML</h2>
+<<<<<<< HEAD
           <div
             className={
               this.props.light === true
@@ -62,6 +71,10 @@ class InputArea extends React.Component {
             {this.state.transformedText}
           </div>
           <button>Download</button>
+=======
+          <div className= 'HtmlContainer stack stretch-inset'>{this.state.transformedText}</div> 
+          <button onClick={this.downloadFile}>Download</button>
+>>>>>>> 7ea10bca2a03977af52d8fe028a99d0697734228
         </div>
       </div>
     )

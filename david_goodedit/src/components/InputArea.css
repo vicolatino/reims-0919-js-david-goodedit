@@ -46,9 +46,6 @@
 .FirstContainerHTML {
   align-items: stretch;
 }
-.FirstContainerHTML button {
-  /* margin-top: 1%; */
-}
 .SecondInputContainer textarea {
   resize: none;
   width: 314px;
