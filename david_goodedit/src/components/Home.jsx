@@ -16,11 +16,11 @@ function Home({ aziz, light }) {
             offset={1}
             duration={500}>
             START WRITTING
-            <img src ='https://zupimages.net/up/19/51/08jy.png'/>
+            <img alt="a pencil" src ='https://zupimages.net/up/19/51/08jy.png'/>
           </Link>
           </nav>
           <div className='GoodEnoughContainer flex-column'>
-            <img src="https://zupimages.net/up/19/51/vn62.png" alt="" className="GoodEnough"/>
+            <img src="https://zupimages.net/up/19/51/vn62.png" alt="David Goodenough" className="GoodEnough"/>
           </div>
       </div>
   )

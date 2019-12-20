@@ -10,8 +10,7 @@ import { Link } from 'react-router-dom'
 
 function Tutorial() {
   return (
-
-    <div>
+    <div className="tutorialComponent">
       <h1 className="titleSection" id='tutoMk'>Tutoriel</h1>
       <hr />
       <TitleTuto />
