@@ -1,5 +1,5 @@
-.tutorialComponent{
-  background: #f1f1f1;
+.tutorialComponent {
+  background: var(--bg-color);
 }
 
 .titleSection {
@@ -84,7 +84,6 @@
   text-align: center;
   margin-top: 5%;
 }
-
 
 li {
   margin-left: 20%;

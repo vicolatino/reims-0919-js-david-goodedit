@@ -6,8 +6,8 @@ import DavidGoodenough from './components/DavidGoodenough'
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={AppContainer} />
-      <Route path="/Mister-Goodenough" component={DavidGoodenough} />
+      <Route exact path='/' component={AppContainer} />
+      <Route path='/Mister-Goodenough' component={DavidGoodenough} />
     </Switch>
   )
 }
