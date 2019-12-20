@@ -62,7 +62,7 @@
 }
 
 .slider {
-  background: linear-gradient(#ffff00, #ff66b0);
+  background: #c7c7c7;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -73,7 +73,7 @@
 }
 
 .slider:before {
-  background-color: rgb(221, 128, 22);
+  background-color: rgb(245, 245, 245);
   bottom: 4px;
   content: '';
   height: 26px;
@@ -84,12 +84,12 @@
 }
 
 input:checked + .slider {
-  background: linear-gradient(rgb(250, 4, 238), #022188);
+  background: #021a66;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
-  background-color: rgb(255, 255, 1);
+  background-color: rgb(211, 211, 211);
 }
 
 .slider.round {
