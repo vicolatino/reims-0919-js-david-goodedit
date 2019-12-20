@@ -9,8 +9,9 @@ import QuoteTuto from './QuoteTuto'
 
 function Tutorial() {
   return (
-    <div className=':root'>
-      <h1 className='titleSection'>Tutoriel</h1>
+
+    <div>
+      <h1 className="titleSection" id='tutoMk'>Tutoriel</h1>
       <hr />
       <TitleTuto />
       <ParagraphTuto />
