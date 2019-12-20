@@ -3,6 +3,9 @@ import convertToHTML from 'markdown-to-html-converter'
 import './InputArea.css'
 import { Link } from 'react-scroll'
 
+const downloadjs = require("downloadjs")
+
+
 class InputArea extends React.Component  {
   constructor(props) {
     super(props)
@@ -11,7 +14,8 @@ class InputArea extends React.Component  {
       words: 0,
       characters: 0
     }
-    this.converter = this.converter.bind(this)
+    this.converter = this.converter.bind(this);
+    this.downloadFile = this.downloadFile.bind(this);
   }
    
 
@@ -24,6 +28,12 @@ class InputArea extends React.Component  {
           return <p>{balise}</p>
         })
     })
+  }
+
+  downloadFile() {
+    downloadjs(this.state.transformedText.reduce((acc, element) => {
+      return acc + '\n' + element.props.children  ;
+    }, ''), "yourHTML.txt", "text/plain");
   }
 
   render() {
@@ -59,12 +69,11 @@ class InputArea extends React.Component  {
         <section className='FirstContainerHTML inset flex-column'>
           <header>
             <h2 style={{display: 'inline-block'}} className='stack inline'>HTML</h2>
-            (<a href='#' onClick={(e) => e.preventDefault()} className='linkclick'>Download</a>)
+            (<a href='#' onClick={(e) => e.preventDefault()} className='linkclick' onClick={this.downloadFile}>Download</a>)
           </header>
           <div className='HtmlContainer stack stretch-inset'>
             {this.state.transformedText}
           </div>
-          
         </section>
       </div>
     )
