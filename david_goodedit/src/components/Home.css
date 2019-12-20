@@ -1,54 +1,101 @@
-* a, .linkclick {
-    cursor: pointer;
+* a,
+.linkclick {
+  cursor: pointer;
 }
-
 
 * {
-    font-family: 'Montserrat';
+  font-family: 'Montserrat';
 }
 .HomeContainer {
-    background: #f1f1f1;
-    min-height: 100vh;
+  background: var(--bg-color);
+  min-height: 100vh;
 }
-
 
 .HomeNavbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #424242;
-    height: 3em;
-    box-shadow:0 1px 2px #777;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #424242;
+  height: 3em;
+  box-shadow: 0 1px 2px #777;
+  margin-bottom: 1rem;
 }
 .HomeNavbar a {
-    color: #9e9e9e;
-    
+  color: #9e9e9e;
 }
 .HomeNavbar a:hover {
-    color: white;
-    
+  color: white;
 }
 
 .HomeNavbar img {
-    width: 8%;
-    /* margin-left: 5%; */
-    padding: 1rem;
+  width: 8%;
+  /* margin-left: 5%; */
+  padding: 1rem;
 }
 
 .GoodEnough {
-    width: 85%;
-    max-height: 100%;
-    height: auto;
-    
+  width: 85%;
+  max-height: 100%;
+  height: auto;
 }
 
 .GoodEnoughContainer {
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
-    /* padding-top:3% ; */
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  /* padding-top:3% ; */
+}
+.theme-switch-wrapper {
+  position: relative;
+  align-self: flex-end;
 }
 
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
 
+.theme-switch input {
+  display: none;
+}
 
+.slider {
+  background: #c7c7c7;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: rgb(245, 245, 245);
+  bottom: 4px;
+  content: '';
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: #021a66;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: rgb(211, 211, 211);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
