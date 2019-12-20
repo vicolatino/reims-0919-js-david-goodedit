@@ -9,8 +9,8 @@ import QuoteTuto from './QuoteTuto'
 
 function Tutorial() {
   return (
-    <div>
-      <h1 className="titleSection">Tutoriel</h1>
+    <div className=':root'>
+      <h1 className='titleSection'>Tutoriel</h1>
       <hr />
       <TitleTuto />
       <ParagraphTuto />
@@ -19,7 +19,7 @@ function Tutorial() {
       <UrlTuto />
       <QuoteTuto />
     </div>
-  );
+  )
 }
 
 export default Tutorial

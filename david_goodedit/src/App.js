@@ -15,10 +15,15 @@ class App extends React.Component {
 
   aziz() {
     this.setState({ light: !this.state.light })
+    if (this.state.light === true) {
+      document.documentElement.setAttribute('data-theme', 'light')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    }
   }
   render() {
     return (
-      <div className={this.state.light === true ? 'App' : 'darkApp'}>
+      <div className='darkApp'>
         <Home aziz={this.aziz} light={this.state.light} />
         <InputArea light={this.state.light} />
         <Tutorial />

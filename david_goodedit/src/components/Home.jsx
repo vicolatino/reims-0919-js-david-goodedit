@@ -3,11 +3,7 @@ import './Home.css'
 
 function Home({ aziz, light }) {
   return (
-    <div
-      className={
-        light === true ? 'HomeContainer flex-column' : 'darkApp flex-column'
-      }
-    >
+    <div className='darkApp flex-column'>
       <nav className='HomeNavbar flex-row perfect-center'>
         <a className='flex-row perfect-center'>
           START WRITTING
