@@ -1,16 +1,14 @@
 import React from 'react'
-import './App.css'
-import InputArea from './components/InputArea'
-import Home from './components/Home'
-import Tutorial from './components/Tutorial'
+import { Switch, Route } from 'react-router-dom'
+import AppContainer from './AppContainer'
+import DavidGoodenough from './components/DavidGoodenough'
 
 function App() {
   return (
-    <div className='App'>
-        <Home />
-        <InputArea />
-        <Tutorial />
-    </div>
+    <Switch>
+      <Route exact path="/" component={AppContainer} />
+      <Route path="/Mister-Goodenough" component={DavidGoodenough} />
+    </Switch>
   )
 }
 

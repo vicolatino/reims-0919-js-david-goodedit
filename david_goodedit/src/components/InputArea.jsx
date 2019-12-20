@@ -6,6 +6,7 @@ import { Link } from 'react-scroll'
 const downloadjs = require("downloadjs")
 
 
+
 class InputArea extends React.Component  {
   constructor(props) {
     super(props)
@@ -73,7 +74,7 @@ class InputArea extends React.Component  {
             key= "Markdown"
             id='inputMD'
             name='inputMD'
-            className='stack stretch-inset'
+            className='MDInput stack stretch-inset'
             value= {this.state.text}
             onChange={this.converter}
           ></textarea>
@@ -98,5 +99,4 @@ class InputArea extends React.Component  {
     )
   }
 }
-
 export default InputArea
