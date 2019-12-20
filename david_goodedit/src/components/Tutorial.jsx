@@ -6,6 +6,7 @@ import ImageTuto from './ImageTuto'
 import ParagraphTuto from './ParagraphTuto'
 import UrlTuto from './UrlTuto'
 import QuoteTuto from './QuoteTuto'
+import { Link } from 'react-router-dom'
 
 function Tutorial() {
   return (
@@ -18,6 +19,7 @@ function Tutorial() {
       <ImageTuto />
       <UrlTuto />
       <QuoteTuto />
+      <a className="CGU"><Link to="Mister-Goodenough">CGU</Link></a>
     </div>
   );
 }
