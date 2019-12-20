@@ -66,17 +66,14 @@
 }
 
 .exampleImage {
-  display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .boxUrl {
-  text-align: center;
+  align-items: center;
   margin-top: 5%;
 }
 
 .boxQuote {
-  text-align: center;
+  align-items: center;
   margin-top: 5%;
 }
