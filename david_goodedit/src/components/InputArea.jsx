@@ -38,6 +38,7 @@ class InputArea extends React.Component {
         <div className='SecondInputContainer inset flex-column'>
           <h2 className='stack'>MARKDOWN</h2>
           <textarea
+            key= "Markdown"
             id='inputMD'
             name='inputMD'
             className='stack stretch-inset'

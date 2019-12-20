@@ -9,7 +9,7 @@ import QuoteTuto from './QuoteTuto'
 
 function Tutorial() {
   return (
-    <div>
+    <div className="tutorialComponent">
       <h1 className="titleSection">Tutoriel</h1>
       <hr />
       <TitleTuto />
