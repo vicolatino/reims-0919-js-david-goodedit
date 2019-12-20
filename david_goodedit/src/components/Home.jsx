@@ -5,6 +5,7 @@ import { Link } from 'react-scroll'
 function Home({ aziz, light }) {
   return (
     <div className='HomeContainer flex-column'>
+
       <nav className='HomeNavbar flex-row perfect-center'>
         <Link
           activeClass='active'

@@ -1,3 +1,7 @@
+.tutorialComponent{
+  background: #f1f1f1;
+}
+
 .titleSection {
   text-align: center;
 }
@@ -79,4 +83,9 @@
 .boxQuote {
   text-align: center;
   margin-top: 5%;
+}
+
+
+li {
+  margin-left: 20%;
 }

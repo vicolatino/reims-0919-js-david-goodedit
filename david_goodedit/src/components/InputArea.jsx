@@ -71,6 +71,7 @@ class InputArea extends React.Component  {
             </Link>)
           </header>
           <textarea
+            key= "Markdown"
             id='inputMD'
             name='inputMD'
             className='MDInput stack stretch-inset'
