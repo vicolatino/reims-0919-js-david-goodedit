@@ -8,11 +8,13 @@ class InputArea extends React.Component {
     super(props)
     this.state = {
       transformedText: ``,
+      text: null,
       words: 0,
       characters: 0
     }
     this.converter = this.converter.bind(this);
     this.downloadFile = this.downloadFile.bind(this);
+    this.clearMarkdown = this.clearMarkdown.bind(this);
   }
 
   converter(event) {
@@ -24,12 +26,26 @@ class InputArea extends React.Component {
           return <p>{balise}</p>
         })
     })
+    this.setState({text: event.target.value})
   }
 
   downloadFile() {
-    downloadjs(this.state.transformedText.reduce((acc, element) => {
-      return acc + '\n' + element.props.children  ;
-    }, ''), "yourHTML.txt", "text/plain");
+    if (this.state.transformedText === '') {
+      return alert("Télécharger un fichier vide ? Sérieux ?! David Goodenough a travaillé sur un truc qui s'appelle MARKDOWN, à gauche là. Servez vous en !")
+    } else {
+      downloadjs(this.state.transformedText.reduce((acc, element) => {
+        return acc + '\n' + element.props.children;
+      }, ''), "yourHTML.txt", "text/plain");
+    }
+  }
+
+  clearMarkdown() {
+    this.setState({
+      transformedText: '',
+      text: '',
+      words: 0,
+      characters: 0
+    })
   }
 
   render() {
@@ -41,6 +57,7 @@ class InputArea extends React.Component {
             id='inputMD'
             name='inputMD'
             className='stack stretch-inset'
+            value= {this.state.text}
             onChange={this.converter}
           ></textarea>
           <button>Need help ?</button>
@@ -49,6 +66,7 @@ class InputArea extends React.Component {
           <img src='https://zupimages.net/up/19/51/oqpj.png' alt='' />
           <div>Words : {this.state.words}</div>
           <div>Characters : {this.state.characters}</div>
+          <button onClick={this.clearMarkdown}>Clear</button>
         </div>
         <div className='FirstContainerHTML inset flex-column'>
           <h2 className='stack'>HTML</h2>
