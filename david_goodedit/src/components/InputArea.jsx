@@ -18,6 +18,7 @@ class InputArea extends React.Component {
   converter(event) {
     this.setState({
       characters: event.target.value.length,
+      words: event.target.value.split(/[` ` | `'`]/g).length,
       transformedText: convertToHTML(event.target.value + '\n')
         .split(`\n`)
         .map(balise => {
