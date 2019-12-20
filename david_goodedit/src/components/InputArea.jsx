@@ -1,8 +1,9 @@
 import React from 'react'
 import convertToHTML from 'markdown-to-html-converter'
 import './InputArea.css'
+import { Link } from 'react-scroll'
 
-class InputArea extends React.Component {
+class InputArea extends React.Component  {
   constructor(props) {
     super(props)
     this.state = {
@@ -12,6 +13,7 @@ class InputArea extends React.Component {
     }
     this.converter = this.converter.bind(this)
   }
+   
 
   converter(event) {
     this.setState({
@@ -26,29 +28,44 @@ class InputArea extends React.Component {
 
   render() {
     return (
-      <div className='InputContainer'>
-        <div className='SecondInputContainer inset flex-column'>
-          <h2 className='stack'>MARKDOWN</h2>
+      <div id= 'converterMk'className='InputContainer'>
+        <section className='SecondInputContainer inset flex-column'>
+          <header>
+            <h2 style={{display: 'inline-block'}} className='stack inline'>MARKDOWN</h2>
+            (<Link
+              activeClass='active'
+              className='linkclick'
+              to='tutoMk'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}>
+              Need help ?
+            </Link>)
+          </header>
           <textarea
             id='inputMD'
             name='inputMD'
             className='stack stretch-inset'
             onChange={this.converter}
           ></textarea>
-          <button>Need help ?</button>
-        </div>
+          
+        </section>
         <div className='CounterAndLogo'>
           <img src='https://zupimages.net/up/19/51/oqpj.png' alt='' />
           <div>Words : {this.state.words}</div>
           <div>Characters : {this.state.characters}</div>
         </div>
-        <div className='FirstContainerHTML inset flex-column'>
-          <h2 className='stack'>HTML</h2>
+        <section className='FirstContainerHTML inset flex-column'>
+          <header>
+            <h2 style={{display: 'inline-block'}} className='stack inline'>HTML</h2>
+            (<a href='#' onClick={(e) => e.preventDefault()} className='linkclick'>Download</a>)
+          </header>
           <div className='HtmlContainer stack stretch-inset'>
             {this.state.transformedText}
           </div>
-          <button>Download</button>
-        </div>
+          
+        </section>
       </div>
     )
   }

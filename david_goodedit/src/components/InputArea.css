@@ -48,3 +48,22 @@
  .CounterAndLogo img {
     width: 100%;
  }
+
+
+ .linkclick,  .linkclick:visited {
+        color: #007bff;
+        text-decoration: underline;
+        cursor: auto;
+      }
+      
+      .linkclick:active,  .linkclick:visited:active, .linkclick:hover {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+
+
+  /* .linkclick:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+} */
