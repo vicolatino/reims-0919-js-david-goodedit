@@ -10,8 +10,9 @@ import { Link } from 'react-router-dom'
 
 function Tutorial() {
   return (
+
     <div>
-      <h1 className="titleSection">Tutoriel</h1>
+      <h1 className="titleSection" id='tutoMk'>Tutoriel</h1>
       <hr />
       <TitleTuto />
       <ParagraphTuto />
@@ -21,7 +22,7 @@ function Tutorial() {
       <QuoteTuto />
       <a className="CGU"><Link to="Mister-Goodenough">CGU</Link></a>
     </div>
-  );
+  )
 }
 
 export default Tutorial
