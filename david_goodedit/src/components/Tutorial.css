@@ -1,0 +1,90 @@
+.tutorialComponent {
+  background: var(--bg-color);
+}
+
+.titleSection {
+  text-align: center;
+}
+
+.pTitle {
+  text-align: center;
+}
+
+.transformationTitle {
+  display: flex;
+  align-items: baseline;
+}
+
+.transformation {
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+}
+
+#blockTuto {
+  display: flex;
+  align-items: baseline;
+  margin: 0px 20px 10px 60px;
+}
+
+.titleH1 {
+  font-size: 2em;
+  margin: 0px 0px 5px 30px;
+}
+
+.titleH2 {
+  font-size: 1.8em;
+  margin: 0px 0px 5px 30px;
+}
+
+.titleH3 {
+  font-size: 1.6em;
+  margin: 0px 0px 5px 30px;
+}
+
+.titleH4 {
+  font-size: 1.4em;
+  margin: 0px 0px 5px 30px;
+}
+
+#paragraphTuto {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: justify;
+}
+
+.transformationLists {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: auto;
+}
+
+.boxImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.exampleImage {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.boxUrl {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.boxQuote {
+  text-align: center;
+  margin-top: 5%;
+}
+
+li {
+  margin-left: 20%;
+}
